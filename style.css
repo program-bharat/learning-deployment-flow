@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/Pricedown.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'MyCustomFont', sans-serif;
 }
 
 body {

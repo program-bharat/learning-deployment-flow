@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('fonts/Pricedown.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'MyCustomFont', sans-serif;
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .wasted-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+        }
+
+        .game-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%),
+                rgba(50, 50, 50, 0.3);
+            backdrop-filter: grayscale(80%) contrast(120%);
+            z-index: 1;
+        }
+
+        .wasted-banner {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            padding: 25px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .wasted-text {
+            color: #bc1212;
+            font-size: 7rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.9);
+            transform: translateZ(0);
+            user-select: none;
+        }
+
+        .home-btn {
+            position: absolute;
+            right: 3%;
+            bottom: 6%;
+            z-index: 3;
+            font-size: 1.2rem;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: lime;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 12px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .home-btn:hover {
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wasted-container">
+
+        <div class="game-overlay"></div>
+        <div class="wasted-banner">
+            <h1 class="wasted-text">Contact Page</h1>
+        </div>
+    </div>
+    <a href="./index.html" class="home-btn">Return to Home</a>
+</body>
+
+</html>
